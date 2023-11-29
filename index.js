@@ -89,7 +89,7 @@ if (
 ) {
   console.log(`${month} has 30 days.`);
 } else {
-  console.log("Invalid month input.");
+  console.log("Invalid input.");
 }
 
 
