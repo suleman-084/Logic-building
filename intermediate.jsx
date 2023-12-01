@@ -22,3 +22,24 @@ const fizzbuzz = () => {
     return resArray
   }
   console.log(fizzbuzz())
+
+//   Print the following star pattern :-
+
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+
+const printStarPattern = (rows) => {
+    for(let i=1; i<= rows; i++)
+    {
+        let pattern = ''
+        for(let j=1; j<=i; j++){
+            pattern += '*'
+        }
+        console.log(pattern);
+    }
+}
+const numberOfRows = 5;
+printStarPattern(numberOfRows)
