@@ -48,24 +48,27 @@ printStarPattern(numberOfRows)
 
 // const userInput = prompt("enter something")
 // const number = parseInt(userInput)
-const readline = require('readline');
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-rl.question('Enter something: ', (userInput) => {
-  const number = parseInt(userInput);
-//   console.log(number);
-  rl.close();
-});
 
 
-if(!isNaN(number)){
-    for(let i=1; i<=12; i++){
-        console.log(`${number} * ${i} = ${number * i}`)
+
+// if(!isNaN(number)){
+//     for(let i=1; i<=12; i++){
+//         console.log(`${number} * ${i} = ${number * i}`)
+//     }
+// }else {
+//     console.log("invalid input");
+// }
+
+
+// Write a program to return a Fibonacci series : 0,1,1,2,3,5,8,13,21....
+
+const generateFabonacciSeries = (n) => {
+    let fabonacciSeries = [0,1]
+
+    for(let i=2; i<n; i++) {
+        fabonacciSeries.push(fabonacciSeries[i-1] + fabonacciSeries[i-2])
     }
-}else {
-    console.log("invalid input");
+    return fabonacciSeries
 }
+const numberOfTerms = 10;
+console.log(generateFabonacciSeries(numberOfTerms));
