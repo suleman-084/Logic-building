@@ -46,18 +46,18 @@ printStarPattern(numberOfRows)
 
 // Write a program to take a number input from user and print multiplication table 12 times for that number.
 
-// const userInput = prompt("enter something")
-// const number = parseInt(userInput)
+const userInput = prompt("enter something")
+const number = parseInt(userInput)
 
 
 
-// if(!isNaN(number)){
-//     for(let i=1; i<=12; i++){
-//         console.log(`${number} * ${i} = ${number * i}`)
-//     }
-// }else {
-//     console.log("invalid input");
-// }
+if(!isNaN(number)){
+    for(let i=1; i<=12; i++){
+        console.log(`${number} * ${i} = ${number * i}`)
+    }
+}else {
+    console.log("invalid input");
+}
 
 
 // Write a program to return a Fibonacci series : 0,1,1,2,3,5,8,13,21....
