@@ -50,3 +50,20 @@ const resMin = findMin(3,5)
 console.log("minimum is", resMin);
 const resMin2 = findMin(3,5,9,1)
 console.log("minimum is", resMin2);
+
+
+// Given n numbers, your function should return the maximum of them all. The number of parameters won't be accepted from user.
+// Example:
+// Input: findMax(3,5) ––> Output: 5
+// Input: findMax(3,5,9,1) ––> Output: 9
+// (Hint: Lookup rest parameters in JavaScript)
+
+const findMax = (...number) => {
+    const max = Math.max(...number)
+    return max
+}
+
+const resMax = findMax(3,5)
+console.log("maximum is", resMax);
+const resMax2 = findMax(3,5,9,1)
+console.log("maximum is", resMax2);
