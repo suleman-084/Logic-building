@@ -3,11 +3,11 @@
 // Input: power(2,3) ––> Output: 8
 
 
-const power = (a,b) => {
-    return Math.pow(a,b)
+const power = (a, b) => {
+    return Math.pow(a, b)
 
 }
-const results = power(5,3)
+const results = power(5, 3)
 console.log("power is", results);
 
 
@@ -16,7 +16,7 @@ console.log("power is", results);
 // Input: areaOfHexagon(10) ––> Output: 259.80
 
 const areaOfHexagon = (side) => {
-    const area = (3 * Math.sqrt(3)/2) * Math.pow(side,2)
+    const area = (3 * Math.sqrt(3) / 2) * Math.pow(side, 2)
     return area.toFixed(2)
 }
 const output = areaOfHexagon(10)
@@ -46,9 +46,9 @@ const findMin = (...numbers) => {
     return min
 
 }
-const resMin = findMin(3,5)
+const resMin = findMin(3, 5)
 console.log("minimum is", resMin);
-const resMin2 = findMin(3,5,9,1)
+const resMin2 = findMin(3, 5, 9, 1)
 console.log("minimum is", resMin2);
 
 
@@ -63,7 +63,27 @@ const findMax = (...number) => {
     return max
 }
 
-const resMax = findMax(3,5)
+const resMax = findMax(3, 5)
 console.log("maximum is", resMax);
-const resMax2 = findMax(3,5,9,1)
+const resMax2 = findMax(3, 5, 9, 1)
 console.log("maximum is", resMax2);
+
+// Given three angles of a triange, your function should return if it is a scalene, isosceles, equilateral triangle or not a triangle at all. Example:
+// Input: typeOfTriangle(30, 60, 90) ––> Output: Scalene Triangle
+
+
+const typesOfTriangle = (angle1, angle2, angle3) => {
+    if (angle1 + angle2 + angle3 === 180) {
+        if (angle1 !== angle2 && angle2 !== angle3 && angle1 !== angle3) {
+            return "Scalene triangle"
+        } else if (angle1 === angle2 && angle2 === angle3) {
+            return "Equilateral triangle"
+        } else { return "Isosceles triangle" }
+    }else {
+        return "Not a triangle"
+    }
+
+}
+
+const triangle = typesOfTriangle(60, 90,60)
+console.log(triangle);
