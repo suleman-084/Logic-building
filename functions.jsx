@@ -21,3 +21,32 @@ const areaOfHexagon = (side) => {
 }
 const output = areaOfHexagon(10)
 console.log("area is", output);
+
+// Given a sentence, your functions should return the number of words in the sentence.
+// Example:
+// Input: noOfWords(We are neoGrammers) ––> Output: 3
+
+const noOfWords = (sentence) => {
+    const wordArray = sentence.split(" ")
+    return wordArray.length
+
+}
+const words = noOfWords("we are gamers")
+console.log("no of words = ", words);
+
+// Given n numbers, your function should return the minimum of them all. The number of parameters won't be accepted from user.
+// Example:
+// Input: findMin(3,5) ––> Output: 3
+// Input: findMin(3,5,9,1) ––> Output: 1
+// (Hint: Lookup rest parameters in JavaScript)
+
+
+const findMin = (...numbers) => {
+    const min = Math.min(...numbers)
+    return min
+
+}
+const resMin = findMin(3,5)
+console.log("minimum is", resMin);
+const resMin2 = findMin(3,5,9,1)
+console.log("minimum is", resMin2);
