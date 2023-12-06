@@ -85,5 +85,17 @@ const typesOfTriangle = (angle1, angle2, angle3) => {
 
 }
 
-const triangle = typesOfTriangle(60, 90,60)
+const triangle = typesOfTriangle(60, 60,60)
 console.log(triangle);
+
+
+// Given an array, your function should return the length of the array.
+// Example:
+// Input: arrayLength([1,5,3,7,8]) ––> Output: 5
+
+const arrayLength = ()=>{
+    const array = [1,5,3,7,8,12,15]
+    return array.length
+}
+const length = arrayLength()
+console.log(length);
