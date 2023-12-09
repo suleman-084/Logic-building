@@ -107,17 +107,3 @@ if (week === "monday" || week === "tuesday" || week === "wednesday" || week === 
 }
 
 
-// Write a program to take a number input from user and print multiplication table 12 times for that number.
-
-const userInput = prompt("enter something")
-const number = parseInt(userInput)
-
-
-
-if (!isNaN(number)) {
-    for (let i = 1; i <= 12; i++) {
-        console.log(`${number} * ${i} = ${number * i}`)
-    }
-} else {
-    console.log("invalid input");
-}
