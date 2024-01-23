@@ -1,6 +1,6 @@
-const greet = (cb) => {
+const greet = (callback) => {
     console.log("Hello Iam greet");
-    cb()
+    callback()
 }
 const cb = () => {
     console.log("iam callback");
