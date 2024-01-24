@@ -32,3 +32,6 @@ Promise.race([promise1, promise2])
   .catch((reason) => {
     console.error("This should not happen:", reason);
   });
+
+//   promise.allsettled()
+
