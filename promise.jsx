@@ -33,5 +33,3 @@ Promise.race([promise1, promise2])
     console.error("This should not happen:", reason);
   });
 
-//   promise.allsettled()
-
