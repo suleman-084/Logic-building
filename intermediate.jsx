@@ -106,4 +106,19 @@ if (week === "monday" || week === "tuesday" || week === "wednesday" || week === 
     console.log(`${week} is a weekend`);
 }
 
+//Write a program to take a number input from user and determine whether the number is odd or even.
+
+// Prompt the user to enter a number
+let number1 = prompt("Enter a number:");
+
+// Convert the user input to a number
+number = parseInt(number1);
+
+// Check if the number is divisible by 2
+if (number1 % 2 === 0) {
+    console.log(number1 + " is an even number.");
+} else {
+    console.log(number1 + " is an odd number.");
+}
+
 
