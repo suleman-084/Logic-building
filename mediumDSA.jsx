@@ -23,3 +23,14 @@ console.log(indexOf([1, 6, 3, 5, 8, 9], 3)); // Output: 2
 function replace(array, target, replacement) {
     return array.map(item => item === target ? replacement : item);
 }
+console.log(replace([1, 5, 3, 5, 6, 8], 5, 10)); // Output: [1, 10, 3, 10, 6, 8]
+
+
+
+// Given two arrays, your function should return single merged array.
+// Example:
+// Input: mergeArray([1,3,5], [2,4,6]) ––> Output: [1,3,5,2,4,6]
+function mergeArray(array1, array2) {
+    return [...array1, ...array2];
+}
+console.log(mergeArray([1, 3, 5], [2, 4, 6])); // Output: [1, 3, 5, 2, 4, 6]
